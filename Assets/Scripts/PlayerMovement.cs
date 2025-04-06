@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private CharacterController Controller;
     private Vector3 CurrentMoveVelocity;
     private Vector3 MoveDampVelocity;
+    private bool isFrozen; 
 
     void Start()
     {
@@ -40,6 +41,17 @@ public class PlayerMovement : MonoBehaviour
             MoveSmoothTime
         );
 
-        Controller.Move(CurrentMoveVelocity * Time.deltaTime);
+        if(isFrozen == false)
+            Controller.Move(CurrentMoveVelocity * Time.deltaTime);
+    }
+
+    public void DialogueStart()
+    {
+        isFrozen = true;
+    }
+
+    public void DialogueEnd()
+    {
+        isFrozen = false;
     }
 }
