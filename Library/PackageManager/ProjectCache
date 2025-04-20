@@ -2793,9 +2793,11 @@ m_ResolvedPackages:
     - 2.0.20
     - 2.0.21
     - 2.0.22
+    - 2.0.23
     compatible:
     - 2.0.22
-    recommended: 2.0.22
+    - 2.0.23
+    recommended: 2.0.23
     deprecated: []
   dependencies:
   - name: com.unity.test-framework
@@ -2903,9 +2905,13 @@ m_ResolvedPackages:
     - 3.0.28
     - 3.0.31
     - 3.0.34
+    - 3.0.35
+    - 3.0.36
     compatible:
     - 3.0.34
-    recommended: 3.0.34
+    - 3.0.35
+    - 3.0.36
+    recommended: 3.0.36
     deprecated: []
   dependencies:
   - name: com.unity.ext.nunit
@@ -3427,8 +3433,10 @@ m_ResolvedPackages:
     - 1.0.3
     - 2.0.0
     - 2.0.1
+    - 2.1.0
     compatible:
     - 2.0.1
+    - 2.1.0
     recommended: 2.0.1
     deprecated: []
   dependencies: []
