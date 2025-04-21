@@ -6,11 +6,14 @@ using UnityEngine.UI;
 
 public class Buttons : MonoBehaviour
 {
+    public PlayerMovement Player;
     public Sprite[] charParts;
     public Slider volumeSlider;
     public GlobalManager globalManager;
     public GameObject characterSelect;
     public GameObject settingSelect;
+    public GameObject pauseMenu;
+    public GameObject creditsMenu;
     public Image currentSprite;
 
     public Image currentVol;
@@ -30,6 +33,30 @@ public class Buttons : MonoBehaviour
             LoadSettings();
     }
 
+    public void Credits()
+    {
+        creditsMenu.SetActive(true);
+    }
+
+    public void ExitCredits()
+    {
+        creditsMenu.SetActive(false);
+    }
+    
+    public void Pause()
+    {
+        pauseMenu.SetActive(true);
+        Player.DialogueStart();
+    }
+    public void Resume()
+    {
+        pauseMenu.SetActive(false);
+        Player.DialogueEnd();
+    }
+    public void BackToTitle()
+    {
+        SceneManager.LoadScene("TitleScreen");
+    }
     public void CharacterSelect()
     {
         characterSelect.SetActive(true);
@@ -52,7 +79,7 @@ public class Buttons : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Apartment");
     }
 
     public void ChangeVolume()
