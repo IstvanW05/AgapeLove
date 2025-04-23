@@ -19423,8 +19423,13 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp",
       "DisplayName": "Writing Assembly-CSharp.rsp",
       "ActionType": "WriteFile",
+<<<<<<< HEAD
       "PayloadOffset": 1449492,
       "PayloadLength": 32733,
+=======
+      "PayloadOffset": 1444055,
+      "PayloadLength": 32816,
+>>>>>>> 602d16397bc7aa9bd681118a28ab43e8335e2e3b
       "PayloadDebugContentSnippet": "-target:library\n-out:\"Library/",
       "Inputs": [],
       "Outputs": [
@@ -19436,7 +19441,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp2",
       "DisplayName": "Writing Assembly-CSharp.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< HEAD
       "PayloadOffset": 1482312,
+=======
+      "PayloadOffset": 1476958,
+>>>>>>> 602d16397bc7aa9bd681118a28ab43e8335e2e3b
       "PayloadLength": 0,
       "PayloadDebugContentSnippet": "",
       "Inputs": [],
@@ -19686,9 +19695,11 @@
         "Assets/Scripts/DialogueFadeIn.cs",
         "Assets/Scripts/GlobalManager.cs",
         "Assets/Scripts/ImageFade.cs",
+        "Assets/Scripts/ImageFade1.cs",
         "Assets/Scripts/InitiateDialogue.cs",
         "Assets/Scripts/PickupObject.cs",
         "Assets/Scripts/PlayerMovement.cs",
+        "Assets/Scripts/Trash.cs",
         "Assets/Scripts/UpdateMeter.cs",
         "C:/Program Files/Unity/Hub/Editor/2022.3.56f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll",
         "C:/Program Files/Unity/Hub/Editor/2022.3.56f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll",
@@ -19928,7 +19939,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll.mvfrm.rsp",
       "DisplayName": "Writing Assembly-CSharp.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< HEAD
       "PayloadOffset": 1482408,
+=======
+      "PayloadOffset": 1477054,
+>>>>>>> 602d16397bc7aa9bd681118a28ab43e8335e2e3b
       "PayloadLength": 9366,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],

@@ -69,7 +69,9 @@
     <Compile Include="Assets\Scripts\UpdateMeter.cs" />
     <Compile Include="Assets\Scripts\GlobalManager.cs" />
     <Compile Include="Assets\Scripts\Buttons.cs" />
+    <Compile Include="Assets\Scripts\Trash.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\ImageFade1.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

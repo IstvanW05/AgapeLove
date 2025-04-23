@@ -6,7 +6,8 @@ public class PlayerMovement : MonoBehaviour
 {
     public float MoveSmoothTime;
     public float Speed;
-    
+    public int trashCleaned;
+    public GameObject cleanSuccess;
     public Vector3 PlayerInput;
     private CharacterController Controller;
     private Vector3 CurrentMoveVelocity;
@@ -43,6 +44,9 @@ public class PlayerMovement : MonoBehaviour
 
         if(isFrozen == false)
             Controller.Move(CurrentMoveVelocity * Time.deltaTime);
+
+        if(trashCleaned == 5)
+            cleanSuccess.SetActive(true);
     }
 
     public void DialogueStart()
