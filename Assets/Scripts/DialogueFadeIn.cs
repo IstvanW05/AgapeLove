@@ -7,6 +7,7 @@ using TMPro;
 public class DialogueFadeIn : MonoBehaviour
 {
     public PlayerMovement Player;
+    public GameObject lastBranch;
     public GameObject fadeBlack;
     public TextMeshProUGUI textComponent;
     public string[] lines;
@@ -15,6 +16,8 @@ public class DialogueFadeIn : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if(lastBranch != null)
+            lastBranch.SetActive(false);
         Player.DialogueStart();
         textComponent.text = string.Empty;
         StartDialogue();

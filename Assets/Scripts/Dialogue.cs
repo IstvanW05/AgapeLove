@@ -6,13 +6,19 @@ using TMPro;
 public class Dialogue : MonoBehaviour
 {
     public PlayerMovement Player;
+    public GameObject lastBranch;
+    public GameObject nextBranch;
     public TextMeshProUGUI textComponent;
     public string[] lines;
     public float textSpeed;
     private int index;
+
     // Start is called before the first frame update
     void Start()
     {
+        if(lastBranch != null)
+            lastBranch.SetActive(false);
+        
         Player.DialogueStart();
         textComponent.text = string.Empty;
         StartDialogue();
@@ -21,7 +27,7 @@ public class Dialogue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetMouseButtonDown(0))
         {
             if(textComponent.text == lines[index])
             {
@@ -60,7 +66,10 @@ public class Dialogue : MonoBehaviour
         }
         else
         {
-            Player.DialogueEnd();
+            if(nextBranch != null)
+                nextBranch.SetActive(true);
+            else
+                Player.DialogueEnd();
             gameObject.SetActive(false);
         }
     }

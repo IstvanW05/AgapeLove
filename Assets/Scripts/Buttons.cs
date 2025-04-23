@@ -8,7 +8,6 @@ public class Buttons : MonoBehaviour
 {
     public PlayerMovement Player;
     public Slider volumeSlider;
-    public GlobalManager globalManager;
     public GameObject settingSelect;
     public GameObject pauseMenu;
     public Image currentVol;
@@ -26,6 +25,7 @@ public class Buttons : MonoBehaviour
         else
             LoadSettings();
     }
+    
     public void Pause()
     {
         pauseMenu.SetActive(true);
@@ -40,7 +40,6 @@ public class Buttons : MonoBehaviour
     {
         SceneManager.LoadScene("TitleScreen");
     }
-
     public void SettingSelect()
     {
         settingSelect.SetActive(true);

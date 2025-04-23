@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ImageFade : MonoBehaviour {
 
@@ -9,6 +10,7 @@ public class ImageFade : MonoBehaviour {
     public Image img;
     public bool fadeAway;
     public GameObject DialogueBox;
+    public GlobalManager globalManager;
     
     void Start()
     {
@@ -41,7 +43,13 @@ public class ImageFade : MonoBehaviour {
                 yield return null;
             }
 
-            DialogueBox.SetActive(true);
+            if(globalManager.gotHeart)
+            {
+                globalManager.addHeart();
+                globalManager.resetGotHeart();
+            }
+            SceneManager.LoadScene("Apartment Day 10 (new)");
+            
         }
     }
 }

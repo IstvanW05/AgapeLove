@@ -4,32 +4,25 @@ using UnityEngine;
 
 public class GlobalManager : MonoBehaviour
 {
-    public int charID;
-
+    public int hearts;
+    public bool gotHeart;
     void Awake()
     {
         DontDestroyOnLoad(gameObject);
     }
     
-    //ik i could use a bool but this is to make customization easier
-    public void SwitchCharAdd()
+    public void addHeart()
     {
-        //if the player isnt on the last option (options - 1)
-        if(charID < 1)
-            charID++;
-        //if they are on the last option, loop to start
-        else if(charID == 1)
-            charID = 0;
+        hearts++;
     }
 
-    public void SwitchCharSubtract()
+    public void setGotHeart()
     {
-        //same as above but for going backwards
-        if(charID > 1)
-            charID--;
-        //if they are on the first option, loop to end
-        else if(charID == 0)
-            charID = 1;
+        gotHeart = true;
+    }
 
+    public void resetGotHeart()
+    {
+        gotHeart = false;
     }
 }
