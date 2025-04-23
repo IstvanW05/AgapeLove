@@ -63,7 +63,6 @@
     <Compile Include="Assets\Scripts\PickupObject.cs" />
     <Compile Include="Assets\Scripts\SwitchModel.cs" />
     <Compile Include="Assets\Scripts\Dialogue.cs" />
-    <Compile Include="Assets\Scripts\DialogueBranch.cs" />
     <Compile Include="Assets\Scripts\InitiateDialogue.cs" />
     <Compile Include="Assets\Scripts\GlobalManager.cs" />
     <Compile Include="Assets\Scripts\Buttons.cs" />

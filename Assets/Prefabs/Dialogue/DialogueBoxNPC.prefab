@@ -91,10 +91,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
   textComponent: {fileID: 8347984383372029535}
-  lines: []
+  lines:
+  - Hi. I'm the Prototype Player design.
+  - This is a dev-only area. If you're not a dev, you shouldn't be here.
+  - If you are a dev, I'll tell you have to make NPCs have dialogue.
+  - First, give whatever character you want to talk a Box Collider, and mark it as
+    a trigger.
+  - This is the range a player has to be in order to talk.
+  - Next, find the script "DialogueInitiate" and attach it to the NPC.
+  - Take the "TalkPopup" prefab, make it a child of the NPC, and drag it above their
+    head in the scene.
+  - You also want to put it as the "TalkText" variable in the script by dragging
+    it there in the Inspector.
+  - Next, take the "DialogueBoxNPC" prefab and drag it into the Canvas in the Hierarchy.
+  - Go to the script component, and type in your dialogue.
+  - Drag the Player from the Hierarchy to this script at the variable "Player".
+  - This ensures the player cannot move during dialogue.
+  - Finally, drag the DialogueBoxNPC component from the Hierarchy onto the DialogueInitiate
+    scripton the NPC.
+  - Thanks, bud. You're the best. You give people like me a voice.
+  - Literally. Please don't take my voice away.
   textSpeed: 0.03
   index: 0
-  dialogBranch: {fileID: 0}
 --- !u!1 &8273011927854105347
 GameObject:
   m_ObjectHideFlags: 0
