@@ -7,20 +7,14 @@ using UnityEngine.UI;
 public class Buttons : MonoBehaviour
 {
     public PlayerMovement Player;
-    public Sprite[] charParts;
     public Slider volumeSlider;
     public GlobalManager globalManager;
-    public GameObject characterSelect;
     public GameObject settingSelect;
     public GameObject pauseMenu;
-    public GameObject creditsMenu;
-    public Image currentSprite;
-
     public Image currentVol;
     public Sprite volumeHigh;
     public Sprite volLow;
     public Sprite volMute;
-    private int i = 0;
 
     void Start()
     {
@@ -32,17 +26,6 @@ public class Buttons : MonoBehaviour
         else
             LoadSettings();
     }
-
-    public void Credits()
-    {
-        creditsMenu.SetActive(true);
-    }
-
-    public void ExitCredits()
-    {
-        creditsMenu.SetActive(false);
-    }
-    
     public void Pause()
     {
         pauseMenu.SetActive(true);
@@ -57,19 +40,10 @@ public class Buttons : MonoBehaviour
     {
         SceneManager.LoadScene("TitleScreen");
     }
-    public void CharacterSelect()
-    {
-        characterSelect.SetActive(true);
-    }
 
     public void SettingSelect()
     {
         settingSelect.SetActive(true);
-    }
-
-    public void ExitCharacterSelect()
-    {
-        characterSelect.SetActive(false);
     }
 
     public void ExitSettings()
@@ -115,23 +89,5 @@ public class Buttons : MonoBehaviour
     public void SaveSettings()
     {
         PlayerPrefs.SetFloat("musicVolume", volumeSlider.value);
-    }
-    public void ChangeCharacterAdd()
-    {   
-        i++;    
-        if(i > charParts.Length - 1)
-            i = 0;
-
-        currentSprite.sprite = charParts[i];
-        globalManager.SwitchCharAdd();
-    }
-
-    public void ChangeCharacterSubtract()
-    {
-        i--;
-        if(i < 0)
-            i = charParts.Length - 1;
-        currentSprite.sprite = charParts[i];
-        globalManager.SwitchCharSubtract();
     }
 }
