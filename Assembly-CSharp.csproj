@@ -62,10 +62,12 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\PickupObject.cs" />
     <Compile Include="Assets\Scripts\DialogueFadeIn.cs" />
+    <Compile Include="Assets\Scripts\TriggerBehavior.cs" />
     <Compile Include="Assets\Scripts\Dialogue.cs" />
     <Compile Include="Assets\Scripts\DialogueBranch.cs" />
     <Compile Include="Assets\Scripts\ImageFade.cs" />
     <Compile Include="Assets\Scripts\InitiateDialogue.cs" />
+    <Compile Include="Assets\Scripts\Door.cs" />
     <Compile Include="Assets\Scripts\UpdateMeter.cs" />
     <Compile Include="Assets\Scripts\GlobalManager.cs" />
     <Compile Include="Assets\Scripts\Buttons.cs" />

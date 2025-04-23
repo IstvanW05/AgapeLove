@@ -356,6 +356,7 @@
 "Assets/Scripts/Dialogue.cs"
 "Assets/Scripts/DialogueBranch.cs"
 "Assets/Scripts/DialogueFadeIn.cs"
+"Assets/Scripts/Door.cs"
 "Assets/Scripts/GlobalManager.cs"
 "Assets/Scripts/ImageFade.cs"
 "Assets/Scripts/ImageFade1.cs"
@@ -363,6 +364,7 @@
 "Assets/Scripts/PickupObject.cs"
 "Assets/Scripts/PlayerMovement.cs"
 "Assets/Scripts/Trash.cs"
+"Assets/Scripts/TriggerBehavior.cs"
 "Assets/Scripts/UpdateMeter.cs"
 -langversion:9.0
 /deterministic
