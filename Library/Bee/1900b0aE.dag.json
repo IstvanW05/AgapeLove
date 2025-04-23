@@ -19423,13 +19423,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp",
       "DisplayName": "Writing Assembly-CSharp.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
       "PayloadOffset": 1449492,
-      "PayloadLength": 32733,
-=======
-      "PayloadOffset": 1444055,
-      "PayloadLength": 32816,
->>>>>>> 602d16397bc7aa9bd681118a28ab43e8335e2e3b
+      "PayloadLength": 32790,
       "PayloadDebugContentSnippet": "-target:library\n-out:\"Library/",
       "Inputs": [],
       "Outputs": [
@@ -19441,11 +19436,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp2",
       "DisplayName": "Writing Assembly-CSharp.rsp2",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1482312,
-=======
-      "PayloadOffset": 1476958,
->>>>>>> 602d16397bc7aa9bd681118a28ab43e8335e2e3b
+      "PayloadOffset": 1482369,
       "PayloadLength": 0,
       "PayloadDebugContentSnippet": "",
       "Inputs": [],
@@ -19939,11 +19930,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll.mvfrm.rsp",
       "DisplayName": "Writing Assembly-CSharp.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-<<<<<<< HEAD
-      "PayloadOffset": 1482408,
-=======
-      "PayloadOffset": 1477054,
->>>>>>> 602d16397bc7aa9bd681118a28ab43e8335e2e3b
+      "PayloadOffset": 1482465,
       "PayloadLength": 9366,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
