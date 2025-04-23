@@ -109,6 +109,7 @@
 -define:ENABLE_UNITY_COLLECTIONS_CHECKS
 -define:ENABLE_BURST_AOT
 -define:UNITY_TEAM_LICENSE
+-define:UNITY_PRO_LICENSE
 -define:ENABLE_CUSTOM_RENDER_TEXTURE
 -define:ENABLE_DIRECTOR
 -define:ENABLE_LOCALIZATION
@@ -354,11 +355,14 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.56f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/Buttons.cs"
 "Assets/Scripts/Dialogue.cs"
+"Assets/Scripts/DialogueBranch.cs"
+"Assets/Scripts/DialogueFadeIn.cs"
 "Assets/Scripts/GlobalManager.cs"
+"Assets/Scripts/ImageFade.cs"
 "Assets/Scripts/InitiateDialogue.cs"
 "Assets/Scripts/PickupObject.cs"
 "Assets/Scripts/PlayerMovement.cs"
-"Assets/Scripts/SwitchModel.cs"
+"Assets/Scripts/UpdateMeter.cs"
 -langversion:9.0
 /deterministic
 /optimize+

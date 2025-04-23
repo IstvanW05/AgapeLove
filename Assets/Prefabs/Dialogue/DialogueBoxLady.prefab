@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7935181204271502815
+--- !u!1 &5480318929653862682
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,30 +8,30 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4589186528883109954}
-  - component: {fileID: 5437528887104816234}
-  - component: {fileID: 1461241602719689300}
-  - component: {fileID: 102972622007807198}
+  - component: {fileID: 6867118211812091211}
+  - component: {fileID: 8148933400856713785}
+  - component: {fileID: 7541522197001857176}
+  - component: {fileID: 417633874766567897}
   m_Layer: 5
-  m_Name: DialogueBoxNPC
+  m_Name: DialogueBoxLady
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &4589186528883109954
+  m_IsActive: 1
+--- !u!224 &6867118211812091211
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7935181204271502815}
+  m_GameObject: {fileID: 5480318929653862682}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8212938963895210436}
+  - {fileID: 5529379569276054131}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -39,21 +39,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -200}
   m_SizeDelta: {x: -200, y: -600}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &5437528887104816234
+--- !u!222 &8148933400856713785
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7935181204271502815}
+  m_GameObject: {fileID: 5480318929653862682}
   m_CullTransparentMesh: 1
---- !u!114 &1461241602719689300
+--- !u!114 &7541522197001857176
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7935181204271502815}
+  m_GameObject: {fileID: 5480318929653862682}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -77,43 +77,33 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &102972622007807198
+--- !u!114 &417633874766567897
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7935181204271502815}
+  m_GameObject: {fileID: 5480318929653862682}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4f91e7b072141f46a1140c084b8ec63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  textComponent: {fileID: 8347984383372029535}
+  textComponent: {fileID: 9162053692380776751}
   lines:
-  - Hi. I'm the Prototype Player design.
-  - This is a dev-only area. If you're not a dev, you shouldn't be here.
-  - If you are a dev, I'll tell you have to make NPCs have dialogue.
-  - First, give whatever character you want to talk a Box Collider, and mark it as
-    a trigger.
-  - This is the range a player has to be in order to talk.
-  - Next, find the script "DialogueInitiate" and attach it to the NPC.
-  - Take the "TalkPopup" prefab, make it a child of the NPC, and drag it above their
-    head in the scene.
-  - You also want to put it as the "TalkText" variable in the script by dragging
-    it there in the Inspector.
-  - Next, take the "DialogueBoxNPC" prefab and drag it into the Canvas in the Hierarchy.
-  - Go to the script component, and type in your dialogue.
-  - Drag the Player from the Hierarchy to this script at the variable "Player".
-  - This ensures the player cannot move during dialogue.
-  - Finally, drag the DialogueBoxNPC component from the Hierarchy onto the DialogueInitiate
-    scripton the NPC.
-  - Thanks, bud. You're the best. You give people like me a voice.
-  - Literally. Please don't take my voice away.
+  - Hello, and welcome to the Agape Love Demo!
+  - In this lovely game, you'll solve your relationship problems by moving objects
+    around and talking to your partner.
+  - Who could have guess that communicating with your partner was good?
+  - Feel free to explore this demo area, check out some of our art assets and move
+    that ball around.
+  - And of course you can always speak to me again.
+  - Although fair warning, I won't give you any new dialogue.
+  - I'll just repeat what I've already told you.
   textSpeed: 0.03
   index: 0
---- !u!1 &8273011927854105347
+--- !u!1 &8202426358537759194
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,9 +111,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8212938963895210436}
-  - component: {fileID: 5734268536876973168}
-  - component: {fileID: 8347984383372029535}
+  - component: {fileID: 5529379569276054131}
+  - component: {fileID: 5222232302580389680}
+  - component: {fileID: 9162053692380776751}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -131,40 +121,40 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &8212938963895210436
+--- !u!224 &5529379569276054131
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8273011927854105347}
+  m_GameObject: {fileID: 8202426358537759194}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4589186528883109954}
+  m_Father: {fileID: 6867118211812091211}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1500, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &5734268536876973168
+--- !u!222 &5222232302580389680
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8273011927854105347}
+  m_GameObject: {fileID: 8202426358537759194}
   m_CullTransparentMesh: 1
---- !u!114 &8347984383372029535
+--- !u!114 &9162053692380776751
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8273011927854105347}
+  m_GameObject: {fileID: 8202426358537759194}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -205,8 +195,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 105
+  m_fontSizeBase: 105
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -241,7 +231,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -301.79626, y: -137.99896, z: -308.7881, w: -169.801}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

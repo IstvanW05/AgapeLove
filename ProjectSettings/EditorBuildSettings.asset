@@ -8,10 +8,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TitleScreen.unity
     guid: a822136b6239f8541ba88a169c74f709
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Old/Apartment.unity
     guid: 85269b3f9006b1f4eaf7431abbc1ce10
+  - enabled: 1
+    path: Assets/Scenes/Apartment (new).unity
+    guid: d6ef54313a6bd2547bbf82311bc4ef14
+  - enabled: 1
+    path: Assets/Scenes/Apartment Day 10 (new).unity
+    guid: 6e686a4792c070a46b3233cff2005a88
+  - enabled: 1
+    path: Assets/Scenes/Apartment Day 20 (new).unity
+    guid: d784f17304fde7e43a41858e97179c54
   m_configObjects: {}
