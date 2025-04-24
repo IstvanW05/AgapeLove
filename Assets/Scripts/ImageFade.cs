@@ -43,11 +43,6 @@ public class ImageFade : MonoBehaviour {
                 yield return null;
             }
 
-            if(globalManager.gotHeart)
-            {
-                globalManager.addHeart();
-                globalManager.resetGotHeart();
-            }
             SceneManager.LoadScene("Apartment Day 10 (new)");
             
         }

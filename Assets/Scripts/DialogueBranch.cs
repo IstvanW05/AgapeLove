@@ -19,7 +19,6 @@ public class DialogueBranch : MonoBehaviour
 
     public void DialogueOption1()
     {
-        global.setGotHeart();
         branches[0].SetActive(true);
         script1.enabled = true;
     }

@@ -52,7 +52,7 @@ public class Buttons : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Apartment");
+        SceneManager.LoadScene("Apartment (new)");
     }
 
     public void ChangeVolume()
